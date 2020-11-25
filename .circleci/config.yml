@@ -17,8 +17,8 @@ aliases:
   - &save_cache
     name: save Composer cache
     key: composer-deps-<<parameters.version>>-{{ checksum "composer.json" }}
-      paths:
-        - ./vendor
+    paths:
+      - ./vendor
 
   - &credentials
     name: Get API Key Dealer client
